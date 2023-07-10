@@ -1,6 +1,5 @@
 const path = require('path');
 const PugPlugin = require('pug-plugin');
-const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -46,7 +45,6 @@ module.exports = {
         filename: 'css/[name].[contenthash:8].css',
       },
     }),
-    new SpriteLoaderPlugin(),
   ],
   module: {
     rules: [
@@ -59,7 +57,7 @@ module.exports = {
         use: ['css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|jpg|jpeg|gif|ico)$/,
+        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
         type: 'asset/resource',
         generator: {
           filename: 'img/[name][ext][query]',
@@ -70,14 +68,6 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: 'fonts/[name][ext][query]',
-        },
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-sprite-loader',
-        options: {
-          extract: true,
-          outputPath: 'img/',
         },
       },
       {
