@@ -1,0 +1,17 @@
+:root {
+	--white: #FFF;
+	--black: #000000;
+	--black_02: rgba(0, 0, 0, 0.2);
+	--black_04: rgba(0, 0, 0, 0.4);
+	--main-container-width: 1440px;
+	--sub-container-width: 940px;
+	--color_1: #F1F1F1;
+	--color_2: #333333;
+	--color_3: #8D4FDB;
+	--color_4: #A9AFB3;
+	--linear-gradient_1: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+$breakpoint_xl: 1024px;
+$breakpoint_md: 767px;
+$breakpoint_sm: 576px;

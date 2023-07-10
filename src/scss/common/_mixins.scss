@@ -1,0 +1,22 @@
+@mixin font($fz, $lh, $fw) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+}
+
+@mixin maxWidth($mw) {
+  width: 100%;
+  max-width: $mw;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin lineClamp ($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}

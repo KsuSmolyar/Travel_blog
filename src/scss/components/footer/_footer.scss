@@ -1,0 +1,22 @@
+.footer {
+	display: flex;
+  @extend %flexCentered;
+	width: 100%;
+	background-color: var(--black);
+	padding-block: 20px;
+}
+.footer-container {
+  @extend %container;
+	gap: 15px;
+	color: var(--color_4);
+}
+
+.footer__upper, .footer__lower {
+	display: flex;
+  @extend %flexCentered;
+	gap: 5px;
+}
+
+.colored {
+	color: var(--color_3);
+}

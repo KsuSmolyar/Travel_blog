@@ -1,0 +1,18 @@
+doctype html
+html(lang='en' dir='ltr')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title TravelBlog
+    link(rel='icon' href=require('img/favicon.ico') sizes='any')
+    link(rel='icon' type='image/png' sizes='32x32' href=require('img/favicon-32x32.png'))
+    link(rel='stylesheet' href=require('scss/index.scss'))
+
+  body
+    div(class="wrapper")
+      div(class="main-wrapper")
+        include includes/header.pug
+        include includes/mainSection.pug
+      include includes/middleSection.pug
+    include includes/footer.pug

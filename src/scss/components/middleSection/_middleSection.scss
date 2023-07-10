@@ -1,0 +1,61 @@
+.middle {
+	display: flex;
+  @extend %flexCentered;
+	width: 100%;
+	padding-block: 80px;
+}
+
+.middle-container {
+	@extend %container;
+	gap: 50px;
+}
+
+.middle__caption {
+  @extend %flexColumn;
+	align-items: center;
+	gap: 15px;
+}
+
+.title_second {
+	color: var(--color_2);
+  @include font(40px, 40px, 400);
+}
+
+.subcaption {
+	color: var(--color_4);
+  @include font(23px, 33px, 400);
+	text-align: center;
+}
+
+.middle__content {
+	display: flex;
+	justify-content: space-between;
+	padding-inline: 5px;
+}
+
+.middle__img {
+	height: auto;
+}
+
+.middle__card {
+  @extend %flexColumn;
+	gap: 23px;
+	padding-inline: 8px;
+	padding-bottom: 26px;
+}
+
+.middle__cardText {
+	font-family: 'Montserrat';
+  @include font(22px, 28px, 400);
+}
+
+.middle__footer {
+	display: flex;
+  @extend %flexCentered;
+	gap: 10px;
+  @include font(15px, 30px, 400);
+}
+
+.middle__footerLink {
+	color: var(--color_3);
+}

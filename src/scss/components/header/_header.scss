@@ -1,0 +1,24 @@
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 8px;
+}
+
+.header-container {
+	@extend %container;
+	gap: 60px;
+}
+
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	column-gap: 24px;
+	row-gap: 10px;
+}
+
+.menu__item {
+	cursor: pointer;
+}

@@ -1,0 +1,19 @@
+@import './variables';
+
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+%flexCentered {
+  justify-content: center;
+  align-items: center;
+}
+
+%container {
+  max-width: var(--sub-container-width);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
